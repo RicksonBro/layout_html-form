@@ -7,6 +7,10 @@
   margin-bottom: 10px;
 }
 
-fieldset:not(:last-child) {
+.fieldset:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.loveCats {
+  display: inline-block;
 }

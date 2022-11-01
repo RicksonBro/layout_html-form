@@ -12,82 +12,110 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <div></div>
-        <label class="username form-field">
+
+        <label class="form-field">
           Surname:
           <input
             type="text"
-            name="username"
+            name="userSurname"
             autocomplete="off"
           >
         </label>
-        <label class="name form-field">
+
+        <label class="form-field">
           Name:
           <input
             type="text"
-            name="name"
+            name="userName"
             autocomplete="off"
           >
         </label>
-        <label class="age form-field">
+
+        <label class="form-field">
           How old are You?
           <input
             type="number"
-            name="age"
+            name="userAge"
             value="12"
             min="1"
             max="100"
           >
         </label>
-        <label class="date form-field">
+
+        <label class="form-field">
           Full date of birth:
-          <input type="date" name="date">
+          <input type="date" name="dateOfBirth">
         </label>
-        <label class="check form-field">
+
+        <label class="form-field">
           I accept the term of the agreement
           <input
             type="checkbox"
-            name="check"
+            name="acceptOfTerms"
             required
           >
         </label>
+
       </fieldset>
-      <fieldset>
+
+      <fieldset class="fieldset">
         <legend>Registration</legend>
-        <label class="email form-field">
+
+        <label class="form-field">
           E-mail:
           <input
             type="email"
-            name="email"
+            name="userEmail"
             placeholder="email@example.com"
           >
         </label>
-        <label class="password form-field">
+
+        <label class="form-field">
           Password:
-          <input type="password" name="password">
+          <input type="password" name="userPassword">
         </label>
+
       </fieldset>
-      <fieldset>
+
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label class="yesno form-field">
-          Do you love cats?
-          <input type="radio" name="yesno">Yes
-          <input type="radio" name="yesno">No
+        Do you love cats?
+
+        <label class="form-field loveCats">
+          <input
+            type="radio"
+            name="loveCats"
+            value="yes"
+          >
+          Yes
         </label>
-        <label class="color form-field">
+
+        <label class="form-field loveCats">
+          <input
+            type="radio"
+            name="loveCats"
+            value="no"
+          >
+          No
+        </label>
+
+        <label class="form-field">
           What is your favorite color?
-          <input type="color" name="color">
+          <input type="color" name="favColor">
         </label>
-        <label class="color form-field">
+
+        <label class="form-field">
           What time do you go bed?
-          <input type="time" name="time">
+          <input type="time" name="timeOfBed">
         </label>
-        <label class="car form-field">
+
+        <label class="form-field">
           What are your favorite brand of cars?
           <select
-            name="car"
+            name="carSelect"
             required
             multiple
           >
@@ -96,37 +124,48 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label class="rate form-field">
+
+        <label class="form-field">
           How do you rate your work?
           <input
             type="range"
-            name="range"
+            name="rateOfJob"
             value="0"
           >
         </label>
 
       </fieldset>
-      <fieldset>
+
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <label class="comments form-field">
+
+        <label class="form-field">
           Comments:
           <textarea
-            name="comment"
+            name="userComments"
             cols="20"
             rows="2"
             autocomplete="off"
           >
           </textarea>
         </label>
-        <label class="recommend form-field">
+
+        <label class="form-field">
           Would you recommend us?
-          <select name="recommend">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+          <select name="userRecommend">
+            <option value="yes">
+              Yes
+            </option>
+            <option value="no">
+              No
+            </option>
           </select>
         </label>
+
       </fieldset>
+
       <button type="submit" class="button">Submit</button>
+
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
